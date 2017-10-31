@@ -35,10 +35,10 @@ def start_game():
             youWin = your_choice == roll_result(total)
             if youWin:
                 print('The points are',points,'You win !')
-                money += bet
+                money += bet * rate
             else:
                 print('The points are',points,'You lose !')
-                money -= bet
+                money -= bet * rate
                 if money == 0:
                     print('YOU HAVE NO MONEY ! GAME ENDS !')
         else:
